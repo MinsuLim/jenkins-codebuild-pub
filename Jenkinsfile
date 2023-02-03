@@ -34,6 +34,7 @@ pipeline {
       steps {
         script {
           echo "${env.JOB_NAME} / ${env.BUILD_NUMBER}" 
+          bat 'dir'
           // sh("""
           //   java -version
           //   aws --version
